@@ -1,0 +1,371 @@
+function setup() {
+  createCanvas(2200, 1800); //背景長寬
+  background(255, 255, 80); // 背景顏色
+  
+  // 畫整個畫布邊框
+  stroke(255); // 邊框顏色
+  strokeWeight(10); // 邊框粗細
+  noFill(); // 確保中間沒有任何填充
+  rect(0, 0, width, height); // 畫框，與畫布同大小
+  
+  //橢圓顏色
+  let R = 25
+  let G = 102
+  let B = 221
+  
+  let distance = 1280 // 橢圓群之間的間距
+  let spacing = 200 // 橢圓之間的間距
+  
+  //邊框左黑右白的橢圓群
+  for (let i = 0; i < 2; i++) {
+    
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 20;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 160 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(8);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 40;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 220 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(12);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 60;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 300 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(16);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 80;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 400 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(20);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 80;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 520 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(20);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 60;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 620 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(16);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 40;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 700 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(12);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+ 
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 20;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 760 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(8);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  }
+   
+  //邊框左白右黑的橢圓群
+  for (let i = 0; i < 1; i++) {
+    let distance = 640
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 20;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 800 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(8);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 40;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 860 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(12);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 60;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 940 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(16);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 80;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 1040 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(20);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 80;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 1160 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(20);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 60;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 1260 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(16);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 40;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 1340 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(12);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+ 
+  for (let j = 0; j < 8; j++) {
+    let ellipseWidth = 20;  // 橢圓寬度
+    let ellipseHeight = 160; // 橢圓高度
+    let centerX = 1400 + i * distance;// X座標
+    let centerY = 200 + j * spacing;// Y座標
+    
+    // 黑色半邊框
+    strokeWeight(8);
+    stroke(0); // 黑色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, -HALF_PI, HALF_PI);
+
+    // 白色半邊框
+    stroke(255); // 白色
+    arc(centerX, centerY, ellipseWidth, ellipseHeight, HALF_PI, -HALF_PI);
+
+    // 填充橢圓
+    noStroke();
+    fill(R, G, B); // 填色
+    ellipse(centerX, centerY, ellipseWidth, ellipseHeight);
+  }
+  
+  }
+  
+}
+
+  
